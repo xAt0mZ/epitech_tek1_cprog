@@ -1,0 +1,31 @@
+2°) devant une position qui n'est pas pn,
+-si c'est pi, on retire une allumette dans une ligne impaire (contenant un nombre impair d'allumettes) ;
+-si c'est ppi, on retire une allumette dans une ligne impaire ;
+-si c'est pip, on retire deux allumettes dans une ligne contenant 2, 3, 6 ou 7 allumettes ;
+-si c'est ipp, on retire quatre allumettes dans une ligne contenant 4, 5, 6 ou 7 allumettes ;
+-si c'est pii, on retire trois allumettes dans une ligne contenant 3 ou 7 allumettes, ou bien une allumette dans une ligne de 2 ou bien encore une dans une ligne de 6 allumettes ;
+-si c'est ipi, on retire cinq allumettes dans une ligne contenant 5 ou 7 allumettes, ou bien trois allumettes dans une ligne de 4 ou de 6 ;
+-si c'est iip, on retire six allumettes dans une ligne contenant 6 ou 7 allumettes, ou bien deux allumettes dans une ligne de 4 ou de 5 ;
+-si c'est iii, on retire une allumette dans une ligne contenant 4 ;
+
+
+Pour GAGNER, il faut laisser à l'adversaire, soit une situation i soit une situation pn avec n>1
+
+
+ppi  1 : 1 dans 1 3 5 7
+
+pip  2 : 2 dans 2 3 6 7
+
+pii  3 : 3 dans 3 7	||	1 dans 2 6
+
+ipp  4 : 4 dans 4 5 6 7
+
+ipi  5 : 5 dans 5 7	||	3 dans 4 6
+
+iip  6 : 6 dans 6 7	||	2 dans 4 5
+
+iii  7 : 1 dans 4
+
+ppp  0 : la première rencontrée
+
+Si reste 1 ligne de plus d'1 allumette : cas particulier.
